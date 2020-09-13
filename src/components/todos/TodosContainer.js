@@ -7,12 +7,12 @@ class TodosContainer extends Component {
   renderTodos = () => this.props.todos.map((todo, id) => <Todo key={id} text={todo} />)
   
   handleSubmit = event => {
-  event.preventDefault();
-  this.props.addTodo(this.state)
-  this.setState({
-    text: '',
-  })
-}
+    event.preventDefault();
+    this.props.addTodo(this.state)
+    this.setState({
+      text: '',
+    })
+  }
  
   render() {
     return(
